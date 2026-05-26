@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500;600;700&family=Klee+One:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-handwriting: "Great Vibes", cursive;
+  --font-tegaki: "Caveat", cursive;
+  --font-tegaki-title: "Klee One", cursive;
+
+  --color-love-red: #8b0000;
+  --color-love-gold: #d4af37;
+  --color-netflix-red: #e50914;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-gray-100 antialiased selection:bg-love-red selection:text-white overflow-x-hidden;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b0000;
+}
+
+@keyframes n-logo-glow {
+  0%, 100% { filter: drop-shadow(0 0 10px #e50914); }
+  50% { filter: drop-shadow(0 0 25px #ff1f1f); }
+}
+
+.netflix-glow {
+  animation: n-logo-glow 2s infinite ease-in-out;
+}
+
+
+@keyframes washi-slide {
+  from { transform: translateX(-120%) rotate(var(--washi-rotate, -2deg)); opacity: 0; }
+  to   { transform: translateX(0)     rotate(var(--washi-rotate, -2deg)); opacity: 1; }
+}
+
+@keyframes petal-drift {
+  0%   { transform: translateY(0px)   rotate(0deg); }
+  50%  { transform: translateY(-4px)  rotate(3deg); }
+  100% { transform: translateY(0px)   rotate(0deg); }
+}
+
+@keyframes splatter-pulse {
+  0%, 100% { opacity: 0.18; transform: scale(1); }
+  50%       { opacity: 0.28; transform: scale(1.08); }
+}
+
+@keyframes stroke-appear {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
