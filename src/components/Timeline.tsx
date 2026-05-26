@@ -24,7 +24,7 @@ const timelineEvents = [
     image: new URL('../images/IMG-20250709-WA0029.jpg.jpeg', import.meta.url).href,
   },
   {
-    date: "November 20, 2025",
+    date: "May 28, 2025",
     title: "Our Special Day",
     icon: <Gem className="text-love-gold" size={24} />,
     description: "The most beautiful celebration of our love. Two hearts, one soul, forever bound.",
