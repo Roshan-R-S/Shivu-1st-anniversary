@@ -19,24 +19,25 @@ const videos: VideoItem[] = [
   },
   {
     title: "Golden Hour Whispers",
-    date: "July 14, 2025",
+    date: "July 13, 2025",
     description: "Chasing sunsets and beautiful smiles.",
     url: new URL('../videos/Untitled design.mp4', import.meta.url).href
   },
   {
     title: "Summer Sunshine",
+    date: "July 13, 2025",
     description: "Laughing under the warm July sun.",
     url: new URL('../videos/VID-20250714-WA0077.mp4', import.meta.url).href
   },
   {
-    title: "Late Night Drives",
-    date: "November 20, 2025",
+    title: "",
+    date: "May 28, 2025",
     description: "Singing along to our favorite songs.",
     url: new URL('../videos/VID_20251120_051128_276.mp4', import.meta.url).href
   },
   {
     title: "Cozy Autumn Nights",
-    date: "November 20, 2025",
+    date: "May 28, 2025",
     description: "Warm coffee, cold air, and your hand in mine.",
     url: new URL('../videos/VID_20251120_051140_257.mp4', import.meta.url).href
   },
@@ -44,7 +45,7 @@ const videos: VideoItem[] = [
     title: "Winter Wonders",
     date: "December 4, 2025",
     description: "Wrapping up the year with the best gift of all.",
-    url: new URL('../videos/VID-20251204-WA0001~2.mp4', import.meta.url).href
+    url: new URL('../videos/VID-20251204-WA0001.mp4', import.meta.url).href
   }
 ];
 

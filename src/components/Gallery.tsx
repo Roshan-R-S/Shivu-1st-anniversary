@@ -97,7 +97,7 @@ const beautifulMemories: PhotoItem[] = [
   },
   {
     src: new URL('../images/Screenshot_20260111-151411~2.png', import.meta.url).href,
-    caption: "Early days selfie"
+    caption: "Early days selfie, Oct 1"
   },
   {
     src: new URL('../images/Snapchat-207435020.jpg.jpeg', import.meta.url).href,
